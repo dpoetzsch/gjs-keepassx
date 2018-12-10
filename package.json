@@ -1,0 +1,17 @@
+{
+  "name": "gjs-keepassx",
+  "version": "1.0.0",
+  "description": "Access to KeepassX databases via gnome's javascript bindings. Uses KeepassXC as backend.",
+  "main": "src/main.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "gir2dts": "^0.1.3",
+    "typescript": "~3.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "David Poetzsch-Heffter <davidpoetzsch@web.de>",
+  "license": "ISC"
+}
