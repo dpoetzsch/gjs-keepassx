@@ -1,3 +1,13 @@
+# Runtime dependencies
+
+This requires KeepassXC >= 2.5 and xclip installed.
+
+On a recent fedora this can be done via:
+
+```bash
+sudo dnf install xclip keepassxc
+```
+
 # Installation
 
 1. Clone the repository

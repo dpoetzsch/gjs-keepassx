@@ -78,7 +78,7 @@ export class KeePassX {
     }
 
     private async fetchEntries(): Promise<Entry[]> {
-        const xml = await this.extract();
+        const xml = await this.export();
         
         return xml.split(/\s*<Entry>/).slice(1).map(entry => {
             const fields: { [key: string]: string | undefined } = {};
@@ -92,7 +92,7 @@ export class KeePassX {
         });
     }
 
-    public extract(): Promise<string> {
-        return this.call("extract");
+    public export(): Promise<string> {
+        return this.call("export");
     }
 }
